@@ -1,0 +1,455 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="styles.css">
+    <title>CSS brief documentation</title>
+  </head>
+  <body>
+ 
+    <nav id="navbar">
+      <header>CSS brief documentations</header>
+      <ul>
+        <li><a class="nav-link" href="#CSS_properties">CSS Properties</a></li>
+        <li><a class="nav-link" href="#selectors">Selectors</a></li>
+         <li><a class="nav-link" href="#pseudo_selectors">Pseudo Selectors</a></li>
+          <li><a class="nav-link" href="#flexbox">FlexBox</a></li>
+           <li><a class="nav-link" href="#CSS_functions">CSS Functions</a></li>
+            <li><a class="nav-link" href="#measuring_units">Measuring Units</a></li>
+             <li><a class="nav-link" href="#CSS_at_rules">CSS At Rules</a></li>
+              <li><a class="nav-link" href="#animations">Animations</a></li>
+
+        </ul>
+      </nav>
+       <main id="main-doc">
+    <section id="CSS_properties" class="main-section">
+      <header>CSS Properties</header>
+      <article><ul>
+        <p>CSS properties define the visual presentation of HTML elements.</p>
+        <li>
+        <p>The<i> font-size</i> property adjusts the size of the text within &lt;p&gt; elements, the <i>color</i> property sets the text color for &lt;p&gt elements.</p>
+        <code>
+p {<br/>
+  font-size: 16px;<br/>
+  color: #333;<br/>
+}
+</code>
+</li>
+<p><li>
+  The <i>border</i> property creates a 1px solid border around elements with the class .container,
+the <i>background-color</i> property sets the background color for elements with the class .container.
+</p>
+<code>
+  .container {<br/>
+  border: 1px solid #ddd;<br/>
+  background-color: #f5f5f5;<br/>
+}<br/>
+</code>
+</li>
+<li>
+  <p>
+    <i>box-sizing: border-box;</i> includes padding and border in the total width of an element.
+
+  </p>
+  <code>
+    .box-sizing-example {<br/>
+  box-sizing: border-box;<br/>
+}<br/>
+  </code>
+</li>
+<li>
+  <p><i>text-overflow: ellipsis;</i> truncates long text with an ellipsis (...) when it overflows its container.</p>
+  <code>
+    .ellipsis-example {<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+  </code>
+  </li>
+</ul>
+      </article>
+
+    </section>
+    <section id="selectors" class="main-section">
+      <header>Selectors</header>
+      <article>
+        
+        <ul>
+          <p>Selectors target HTML elements for styling. They define which elements the styles should be applied to.</p>
+          <li>
+            <p>
+              The <i>p</i> selector targets all &lt;p&gt; elements in the HTML document.
+            </p>
+            <code>
+              p {<br/>
+  font-family: 'Arial', sans-serif;<br/>
+}<br/>
+            </code>
+
+          </li>
+          <li>
+          <p>
+            
+              The <i>.highlight</i> selector targets all elements with the class highlight
+            </p>
+            <code>
+              .highlight {<br/>
+  background-color: yellow;<br/>
+}<br/>
+            </code>
+          </li>
+          <li>
+            <p>
+              <i>[data-type="button"]</i> selects elements with the attribute data-type set to "button".</p>
+          
+          <code>
+            [data-type="button"] {<br/>
+  background-color: #3498db;<br/>
+  color: #fff;<br/>
+}
+          </code>
+          </li>
+          <li>
+            <p><i>.parent > .child</i> selects elements with the class .child that are direct children of an element with the class .parent.</p>
+            <code>.parent > .child {<br/>
+  font-weight: bold;<br/>
+}<br/></code>
+          </li>
+          <li>
+            <p>
+              <i>h2 + p</i> selects &lt;p&gt; elements that directly follow an &lt;h2&gt; element.
+            </p>
+            <code>h2 + p {<br/>
+  font-style: italic;<br/>
+}<br/></code>
+            </li>
+
+        </ul>
+      </article>
+    </section>
+    <section id="pseudo_selectors" class="main-section">
+      <header>Pseudo Selectors</header>
+      <article>
+        <ul>
+          <p>Pseudo-selectors target specific states or parts of elements. They are denoted by a colon (:) followed by a keyword.</p>
+          <li>
+            <p><i>::first-line</i> targets the first line of text within &lt;p&gt; elements and makes it bold.</p>
+            <code>p::first-line {<br/>
+  font-weight: bold;<br/>
+}<br/>
+</code>
+          </li>
+          <li>
+            <p><i>:hover</i> targets the hovered state of anchor (&lt;a&gt;) elements, adding an underline when the user hovers over them.</p>
+            <code>
+              a:hover {<br/>
+  text-decoration: underline;<br/>
+}<br/>
+</code>
+          </li>
+          <li>
+            <p><i>> :first-child</i> selects the first child element of a parent.</p>
+<code>.parent > :first-child {<br/>
+  font-weight: bold;<br/>
+}<br/></code>
+          </li>
+          <li>
+            <p><i>a:visited</i> styles visited links with a purple color.</p>
+            <code>
+              a:visited {<br/>
+  color: purple;<br/>
+}<br/>
+              </code>
+          </li>
+          
+        </ul>
+      </article>
+    </section>
+    <section id="flexbox" class="main-section">
+      <header>FlexBox</header>
+      <article>
+        <ul>
+          <p>
+            Flexbox is a layout model in CSS that allows you to design complex layouts more efficiently and dynamically.
+          </p>
+          <li>
+            <p>
+              <i>display: flex;</i> turns the container into a flex container, <i>justify-content: space-between;</i> evenly distributes items along the main axis with space between them.
+            </p>
+<code>
+  .container {<br/>
+  display: flex;<br/>
+  justify-content: space-between;<br/>
+}
+</code>
+          </li>
+          <li><p><i>flex: 1;</i> assigns equal flexibility to flex items within the container.</p>
+          <code>
+            .item {<br/>
+  flex: 1;<br/>
+}
+          </code>
+          </li>
+          <li>
+            <p><i>justify-content: center;</i> horizontally centers items within the container,
+<i>align-items: center;</i> vertically centers items within the container.</p>
+<code>.center-container {<br/>
+  display: flex;<br/>
+  justify-content: center;<br/>
+  align-items: center;<br/>
+}</code>
+          </li>
+          <li><p><i>order</i> property allows you to change the order of flex items within the container.</p>
+          <code>.order-container {<br/>
+  display: flex;<br/>
+}<br/>
+
+.order-item1 {<br/>
+  order: 2;<br/>
+}<br/>
+
+.order-item2 {<br/>
+  order: 1;<br/>
+}<br/></code>
+          </li>
+          <li>
+            <p><i>flex-wrap: wrap;</i> allows items to wrap to the next line if they don't fit in the container.</p>
+            <code>.wrap-container {
+  display: flex;
+  flex-wrap: wrap;
+}</code>
+          </li>
+          <li><p><i>align-self: flex-end;</i> aligns a specific item to the flex container's end while other items follow the default alignment.</p>
+          <code>.align-self-container {
+  display: flex;
+}
+
+.align-self-item {</br>
+  align-self: flex-end;</br>
+}</br></code>
+</li>
+<li><p><i>justify-content: space-between;</i> evenly distributes space between flex items.</p><code>.space-between-container {</br>
+  display: flex;</br>
+  justify-content: space-between;</br>
+}</br>
+</code></li>
+          </ul>
+      </article>
+    </section>
+    <section id="CSS_functions" class="main-section">
+      <header>CSS Functions</header>
+      <ul><p>CSS functions are built-in functions that manipulate values or perform calculations within style sheets.</p><li><p><i>rgba(255, 0, 0, 0.5)</i> sets a semi-transparent red background using the RGBA color function.</p><code>.element {</br>
+  background-color: rgba(255, 0, 0, 0.5); </br>
+}</br></code></li>
+<li>
+  <p>
+    <i>rotate(45deg)</i> rotates the element by 45 degrees.
+  </p>
+  <code>.rotate {</br>
+  transform: rotate(45deg);</br>
+}</br>
+</code>
+</li>
+<li>
+  <p><i>calc(50% - 20px)</i> calculates the width as 50% minus 20 pixels.</p>
+  <code>.dynamic-width { </br>
+  width: calc(50% - 20px);</br>
+} </br>
+</code>
+<li><p><i>var(--primary-color)</i> uses a custom property for a dynamic color value.</p>
+<code>:root { </br>
+  --primary-color: #3498db; </br>
+} </br>
+
+.dynamic-color { </br>
+  color: var(--primary-color); </br>
+} </br>
+</code>
+</li>
+</ul>
+    </section>
+    <section id="measuring_units" class="main-section">
+      <header>Measuring Units</header>
+      <ul>
+        <p>CSS supports various units for specifying lengths and sizes.</p>
+        <li>
+<p>width: 200<i>px</i>; sets the width of an element to 200 pixels.</p>
+<code>.fixed-size { 
+  width: 200px;
+  height: 100px;
+}
+</code>
+        </li>
+        <li><p>width: 50<i>%</i>; sets the width of an element to 50% of its container.</p></li>
+        <code>.responsive { 
+  width: 50%; 
+} 
+</code>
+<li>
+<p>font-size: 4<i>vw</i>; sets the font size based on 4% of the viewport width.</p>
+<code>.title { 
+  font-size: 4vw; 
+} 
+</code>
+</li>
+<li>
+  <p>height: 50<i>vh</i>; sets the height of an element to 50% of the viewport height.</p>
+  <code>.full-height { 
+  height: 50vh;
+} 
+</code>
+</li>
+
+      </ul>
+    </section>
+    <section id="CSS_at_rules" class="main-section">
+      <header>CSS At Rules</header>
+      <ul>
+        <p>
+      CSS at-rules are instructions for CSS processors and are preceded by an "@" symbol.
+      </p>
+      <li>
+      <p><i> @import url('external-styles.css'); </i>imports an external stylesheets</p>
+      <code>@import url('external-styles.css');</code>
+      </li>
+      <li>
+        <p><i>@media screen and (max-width: 600px)</i> applies styles only when the screen width is 600 pixels or less.</p>
+        <code>@media screen and (max-width: 600px) { </br>
+  body { 
+    font-size: 14px;
+  }
+}</code>
+      </li>
+      <li>
+        <p><i>@font-face</i> imports a custom font and makes it available for use in the stylesheet.</p>
+        <code>@font-face {
+  font-family: 'CustomFont'; 
+  src: url('path/to/custom-font. woff2') format('woff2');</br>
+}
+</code>
+      </li>
+      <li><p><i>@supports (display: grid)</i> checks if the browser supports CSS Grid before applying styles to .grid-layout.</p>
+      <code>@supports (display: grid) { 
+  .grid-layout { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</code>
+      </li>
+      </ul>
+    </section>
+    <section id="animations" class="main-section">
+      <header>Animations</header>
+      <ul>
+        <p>Animations in CSS allow you to create dynamic and engaging effects for elements.
+</p>
+        <li>
+          <p><i>@keyframes slide-in</i> { ... } defines a keyframe animation called slide-in, <i>transform: translateX(-100%); </i>moves the element from left to right.</p>
+          <code>@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to { 
+    transform: translateX(0); 
+  } 
+} </code>
+        </li>
+        <li>
+          <p><i>animation: slide-in 1s ease-in-out;</i> applies the slide-in animation over 1 second with easing.</p>
+          <code>.slide-in-element {
+  animation: slide-in 1s ease-in-out;
+}</code>
+        </li>
+      </ul>
+    </section>
+
+
+  </main>
+  </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+#navbar{
+  position:fixed;
+  left:0;
+  width:220px;
+  min-width:290px;
+  background-color:white;
+
+
+}
+html,body{
+  color:black;
+  background:white;
+  font-family:sans-serif;
+  font-size:15px;
+  height:100%;
+
+}
+#main-doc{
+position:absolute;
+margin-left:267px;
+
+}
+code{
+  display:block;
+margin-top:auto;
+padding:5px;
+background-color:#DBE5FD;
+
+}
+#navbar .nav-link{
+  width:10px;
+  height:180px;
+font-size:1.3rem;
+
+  border:black;
+
+
+}
+#navbar ul{
+height:80vh;
+width:100%;
+
+padding:0;
+background-color:grey;
+}
+#navbar li{
+  position:relative;
+  width:100%;
+  height:10vh;
+  border:1px solid;
+  border-left:0;
+  border-bottom:0;
+  color:black;
+  font-size:1.2rem;
+ 
+  left:0;
+  list-style:none;
+  text-align:center;
+  background-color:white;
+
+}
+#navbar a{
+  color:black;
+  text-decoration:none;
+  font-weight:bold;
+}
+header{
+  text-align:center;
+  font-size:1.8rem;
+  font-weight:bold;
+}
+@media screen and (max-width: 600px) {
+body { font-size: 14px; } }
+
+** end of undefined **
+
