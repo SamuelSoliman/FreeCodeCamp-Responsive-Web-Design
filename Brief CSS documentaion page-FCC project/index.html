@@ -276,29 +276,29 @@ the <i>background-color</i> property sets the background color for elements with
         <p>CSS supports various units for specifying lengths and sizes.</p>
         <li>
 <p>width: 200<i>px</i>; sets the width of an element to 200 pixels.</p>
-<code>.fixed-size { 
-  width: 200px;
-  height: 100px;
+<code>.fixed-size { </br>
+  width: 200px; </br>
+  height: 100px; </br>
 }
 </code>
         </li>
         <li><p>width: 50<i>%</i>; sets the width of an element to 50% of its container.</p></li>
-        <code>.responsive { 
-  width: 50%; 
+        <code>.responsive { </br>
+  width: 50%; </br>
 } 
 </code>
 <li>
 <p>font-size: 4<i>vw</i>; sets the font size based on 4% of the viewport width.</p>
-<code>.title { 
-  font-size: 4vw; 
-} 
+<code>.title { </br>
+  font-size: 4vw; </br>
+} </br>
 </code>
 </li>
 <li>
   <p>height: 50<i>vh</i>; sets the height of an element to 50% of the viewport height.</p>
-  <code>.full-height { 
-  height: 50vh;
-} 
+  <code>.full-height { </br>
+  height: 50vh; </br>
+} </br>
 </code>
 </li>
 
@@ -317,26 +317,26 @@ the <i>background-color</i> property sets the background color for elements with
       <li>
         <p><i>@media screen and (max-width: 600px)</i> applies styles only when the screen width is 600 pixels or less.</p>
         <code>@media screen and (max-width: 600px) { </br>
-  body { 
-    font-size: 14px;
-  }
+  body { </br>
+    font-size: 14px;</br>
+  }</br>
 }</code>
       </li>
       <li>
         <p><i>@font-face</i> imports a custom font and makes it available for use in the stylesheet.</p>
-        <code>@font-face {
-  font-family: 'CustomFont'; 
+        <code>@font-face { </br>
+  font-family: 'CustomFont'; </br>
   src: url('path/to/custom-font. woff2') format('woff2');</br>
-}
+} </br>
 </code>
       </li>
       <li><p><i>@supports (display: grid)</i> checks if the browser supports CSS Grid before applying styles to .grid-layout.</p>
-      <code>@supports (display: grid) { 
-  .grid-layout { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+      <code>@supports (display: grid) { </br>
+  .grid-layout { </br>
+    display: grid; </br>
+    grid-template-columns: repeat(3, 1fr);</br>
+  }</br>
+}</br>
 </code>
       </li>
       </ul>
@@ -348,20 +348,20 @@ the <i>background-color</i> property sets the background color for elements with
 </p>
         <li>
           <p><i>@keyframes slide-in</i> { ... } defines a keyframe animation called slide-in, <i>transform: translateX(-100%); </i>moves the element from left to right.</p>
-          <code>@keyframes slide-in {
-  from {
-    transform: translateX(-100%);
-  }
-  to { 
-    transform: translateX(0); 
-  } 
-} </code>
+          <code>@keyframes slide-in {</br>
+  from {</br>
+    transform: translateX(-100%);</br>
+  }</br>
+  to { </br>
+    transform: translateX(0); </br>
+  } </br>
+} </br></code>
         </li>
         <li>
           <p><i>animation: slide-in 1s ease-in-out;</i> applies the slide-in animation over 1 second with easing.</p>
-          <code>.slide-in-element {
-  animation: slide-in 1s ease-in-out;
-}</code>
+          <code>.slide-in-element {</br>
+  animation: slide-in 1s ease-in-out;</br>
+}</br></code>
         </li>
       </ul>
     </section>
