@@ -1,0 +1,152 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <head>
+<title>
+Man's best friend
+</title>
+<h1 id="title">Man's Best Friend</h1>
+    </head>
+    <main id="main">
+<figure id="img-div">
+<img id="image"src="https://i0.wp.com/rutheh.com/wp-content/uploads/2015/10/man-and-his-best-friend.jpg?ssl=1" alt="dog and his best friend siting in park bench">
+<figcaption id="img-caption"> Two best friends taking a cool photo</figcaption>
+</figure>
+ <h3 id="headline">Dogs-Humans Bond Start And Evolution </h3>
+<section id="tribute-info">
+ 
+  <ul>
+    <li><strong>Early domestication</strong>: Dogs were the first animals to be domesticated by humans, and the process began at least 15,000 years ago. The exact reasons for domestication are still debated, but it is believed that dogs were initially used for hunting, guarding, and companionship</li>
+    <li><strong>Canine evolution</strong>: Over time, dogs have evolved to become more specialized in their roles and physical characteristics, depending on the needs and preferences of humans. This has led to the development of various breeds with distinct traits and temperaments</li>
+    <li><strong>Canine intelligence</strong>: Dogs are known for their remarkable cognitive abilities, such as problem-solving, social learning, and emotional intelligence. They can understand human gestures, facial expressions, and vocalizations, and respond accordingly</li>
+    <li><strong>Canine health benefits</strong>: Interacting with dogs has been shown to have numerous health benefits for humans, such as reducing stress, anxiety, and depression, improving cardiovascular health, and boosting social connections.</li>
+    <li><strong>Canine-human communication</strong>: Dogs communicate with humans through various means, such as barking, growling, whining, and body language. Humans can also learn to interpret and respond to these signals, leading to better mutual understanding and cooperation.</li>
+   
+<li><strong>Canine roles and jobs</strong>: Dogs have performed a wide variety of jobs alongside humans, such as hunting, herding, sledding, military, medical, and search and rescue, requiring a strong bond and mutual understanding between the partners.</li>
+<li><strong>Canine therapy and emotional support</strong>: Dogs can provide comfort, affection, and security to people who suffer from isolation, depression, or other mental illnesses, as well as enhance the well-being of elderly persons and children.</li>
+ <li><strong>Canine cultural significance</strong>: Dogs have played a significant role in human culture, art, literature, and religion, and have been revered as symbols of loyalty, courage, and companionship. They have also been associated with various superstitions and beliefs, such as the idea that black dogs bring bad luck.</li>
+    </ul>
+    
+  </section>
+  <blockquote>
+    <p>"DOG. — It seems that nature has given the dog to man for his defense and for his pleasure. Of all the animals it is the most faithful: it is the best friend man can possibly have."</p>
+    <cite>--Voltaire  in Dictionnaire philosophique</cite>
+  </blockquote>
+  <footer>
+    <a href="https://en.wikipedia.org/wiki/Man%27s_best_friend" id="tribute-link" target="_blank">Read more in the wikipedia page</a>
+  </footer>
+      </main>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+html{
+  font-size:10px;
+   color:#F2F2F2;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#img-div{
+  
+background-color:#BF996B;
+padding-top:10px;
+margin-top:-5px;
+border-radius:40px;
+padding-left:5%;
+padding-right:5%;
+
+}
+h1{
+  
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border-radius:40px;
+  font-size:4rem;
+  letter-spacing:2.2px;
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:7px;
+  padding-bottom:0;
+ color:#F2F2F2;
+}
+body{
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   font-size:1.3rem;
+   line-height:1.7;
+   background:#8C5B3F;
+}
+#image{
+ display:block;
+ border-radius:5px;
+ max-width:100%;
+ height:auto;
+ margin: auto auto;
+ 
+
+}
+#img-caption{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:0.6rem;
+  margin-left:60px;
+  margin-top:2px;
+  font-weight:350;
+  font-style:italic;  
+}
+
+#headline{
+font-size:2.5rem;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+text-align:center;
+margin-bottom:2px;
+margin-top:1px;
+font-weight:400;
+}
+#tribute-info{
+  
+  border-radius:30px;
+  background-color:#BF996B;
+  text-align: left;
+  padding-top:3px;
+  padding-bottom:3px;
+
+}
+#headline{
+  background-color:#8C5B3F;
+  
+}
+ul>li{
+  margin-left:-20px;
+  margin-right:5px;
+}
+strong{
+  text-decoration: underline;
+  letter-spacing:0.1px;
+
+}
+blockquote{
+  background-color:#BF996B;
+  border-radius:15px;
+  padding-left:10px;
+  padding-top:auto;
+  padding-bottom:auto;
+  text-align:left;
+  
+}
+a{
+  color:#F2F2F2;
+ display: flex; justify-content: center;
+align-items: center;
+
+}
+
+** end of undefined **
+
