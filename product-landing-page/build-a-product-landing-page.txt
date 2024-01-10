@@ -1,0 +1,283 @@
+** start of undefined **
+
+<html lang="en">
+  <head> 
+ <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="styles.css">
+      <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body >
+
+   <header id="header">
+     
+<nav id="nav-bar">
+  <ul>
+     <div class="logo">
+      <img  id="header-img" src="https://branditechture.agency/brand-logos/wp-content/uploads/2022/08/Nintendo-Switch-1024x768.png" alt="Nintendo Switch Logo"/>
+      </div>
+    <li ><a class="nav-link" href="#features">Features</a></li>
+    <li><a  class="nav-link" href="#video">Video</a></li>
+    <li ><a class="nav-link" href="#pricing">Pricing</a></li>
+    </ul>
+</nav>
+    </header>
+    <div id="spbig"></div>
+    <main>
+<section id="slogan">
+  <h2>SWITCH IT UP!</h2>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+    <input id="submit" type="submit" value="Get Started!" class="btn"/>
+  </form>
+  </section>
+  
+  <section id="features">
+    <section id="feat-1">
+      <div class="icon"><i class="fa fa-3x fa-solid fa-gamepad"></i></div>
+      <div class="desc">
+        <h2>Handheld Gaming</h2>
+        <p>Offers a great gaming experience, especially when you’re on the go.</p>
+      </div>
+      </section>
+    <section id="feat-2">
+       <div class="icon"><i class=" fa fa-3x fa-solid fa-heart"></i></div>
+      <div class="desc">
+        <h2>Exclusive Games</h2>
+        <p>Games like Animal Crossing, The Legend of Zelda, Super Mario Odyssey and more... </p>
+      </div>
+      </section>
+      <section id="feat-3">
+       <div class="icon"><i class=" fa fa-3x fa-solid fa-battery-full"></i></div>
+      <div class="desc">
+        <h2>Big Battery</h2>
+        <p> It has a battery life of approximately 4.5 - 9 hours, depending on the games you play.</p>
+      </div>
+        </section>
+        </section>
+        <section id="video-sec" >
+          <iframe id="video"  src="https://www.youtube.com/embed/StlBnpCxlok?si=Eb0uTYj7OEnlqVS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </section>
+<section id="pricing">
+  <div class="product" id="mod1">
+    <div class="version">Nintendo Switch – OLED</div>
+  <h2>$346</h2>
+  <ul>
+    <li>Vivid 7” OLED screen</li>
+    <li>Enhanced audio in handheld and tabletop modes</li>
+    <li>Detachable Joy-Con controllers</li>
+    </ul>
+  </div>
+  <div class="product"id="mod2">
+    <div class="version">Nintendo Switch</div>
+  <h2>$294</h2>
+  <ul>
+  <li>6.2” LCD screen</li>
+  <li>Three play modes: TV, tabletop, and handheld</li>
+  <li>Detachable Joy-Con controllers</li>
+  </ul>
+  </div>
+  <div class="product" id="mod3">
+    <div class="version">Nintendo Switch Lite</div>
+  <h2>$198</h2>
+  <ul>
+  <li>Compact, lightweight handheld system</li>
+  <li>Available in a range of fun colors</li>
+  <li>Online and local wireless multiplayer</li>
+
+  </ul>
+  </div>
+
+  </section>
+
+      </main>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+  box-sizing:border-box;
+}
+html{
+  font-size:10px;
+  font-family: 'Tektur', sans-serif;
+}
+body{
+ 
+  
+  background-color:#F0F2F2;;
+  color:#E80515;
+}
+header{
+  width: 100%;
+  height:10vh;
+  position:fixed;
+  Padding-bottom:20px;
+  margin-top:-10px;
+  background-color:#04B8DE;
+   z-index: 1000;
+  
+}
+#spbig{
+  height:80px;
+}
+#nav-bar > ul{
+
+display:flex;
+width:100vw;
+height:10vh;
+
+flex-direction:row;
+justify-content:space-evenly;
+align-items:center;
+margin-top:0;
+
+
+}
+#nav-bar > ul> li{
+  list-style:none;
+}
+ li > a{
+  text-decoration:none;
+  font-weight:bold;
+   font-size:1.8rem;
+   color:#E80515;
+   
+  
+}
+.btn{
+  color:#E80515;
+  font-family:'Tektur', sans-serif;
+  background:#F0F2F2;
+  border-radius:100%;
+  height:50px;
+}
+.btn:hover{
+  background-color:#04B8DE;
+  font-weight:bold;
+}
+
+img{
+  max-height:80px;
+  position:relative;
+  margin-left:-80%;
+  
+}
+#slogan{
+  display:flex;
+flex-direction:column;
+align-items:center;
+padding-bottom:4vh;
+}
+#slogan > h2{
+  font-size:1.9rem;
+}
+#features{
+ display:flex;
+ flex-direction:row;
+ align-content:center;
+ flex-wrap:wrap;
+ max-width:100%;
+  height:60vh;
+  font-size:1.4rem;
+
+}
+#feat-1{
+  display:flex;
+  width:100%;
+ align-items:center; 
+ justify-content:space-evenly;
+ flex-wrap:wrap;
+ 
+
+}
+#feat-1 > .desc{
+ position: relative;
+  margin-right:12%;
+}
+#feat-2{
+  display:flex;
+  width:100%;
+  
+ align-items:center; 
+justify-content:space-evenly;
+ flex-wrap:wrap;
+
+}
+#feat-3{
+  display:flex;
+  width:100%;
+
+ align-items:center;
+  justify-content:space-evenly;
+ flex-wrap:wrap;
+ 
+}
+#feat-3 > .desc{
+  margin-left:20px;
+}
+#feat-3 > .icon{
+  margin-left:12px;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+#video-sec{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:15px;
+  height:60vh;
+}
+#video{
+  height:70%;
+  width:50%;
+  
+}
+#pricing{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-evenly;
+  height:30vh;
+}
+.product{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border: 3px solid #04B8DE;
+  
+}
+.version{
+  display:flex;
+  font-size:1.5rem;
+  font-weight:bold;
+
+ background-color:#04B8DE;
+  width:100%;
+  align-items:center;
+  justify-content:center;
+  
+}
+.product{
+  margin-right:2%;
+  margin-left:2%;
+  
+}
+
+  
+}
+
+** end of undefined **
+
